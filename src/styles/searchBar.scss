@@ -1,0 +1,31 @@
+.searchForm {
+  input[type="search"] {
+    padding: 5px 30px 5px 10px;
+    font-size: 0.9em;
+
+    &::placeholder {
+      color: rgba(89, 89, 89, 0.5);
+      font-size: 0.9em;
+    }
+  }
+  .site-submit {
+    background-color: transparent;
+    margin-left: -35px;
+    border: 0px;
+    appearance: none;
+    &:before {
+      content: "\F52A";
+      font-family: "bootstrap-icons", sans-serif;
+      color: #ff227f;
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .searchForm {
+    input[type="search"] {
+      padding: 5px 10px 5px 10px;
+    }
+  }
+}

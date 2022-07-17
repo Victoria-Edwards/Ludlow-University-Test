@@ -1,0 +1,28 @@
+.searchDropdown {
+  .dropdown-group {
+    display: none;
+    &.active {
+      display: flex;
+      background-color: #333;
+      padding: 2em;
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+      flex-direction: column;
+      top: 100%;
+      right: 0%;
+    }
+  }
+
+  .openSearchButton {
+    background-color: transparent;
+    border: 0px;
+    appearance: none;
+    padding: 0;
+    &:before {
+      content: "\F52A";
+      font-family: "bootstrap-icons", sans-serif;
+      color: #ff227f;
+    }
+  }
+}

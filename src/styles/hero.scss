@@ -1,0 +1,42 @@
+.heroSection {
+  .smallText {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875em;
+  }
+
+  .gradientButton a {
+    display: block;
+    background: none;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #f24822, #34ceff);
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25em;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 3em;
+
+    &:hover {
+      text-decoration: underline;
+      color: #333;
+    }
+  }
+
+  .gradientButton {
+    max-width: 18.125em;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    h1 {
+      margin: 1em 0 0.5em 0;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.tweet {
+  min-height: 68px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Helevetica", arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+
+  .tweetHeader {
+    text-align: left;
+    .tweetName {
+      p:first-of-type {
+        font-weight: bolder;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    .avatar {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+    }
+    &:after {
+      content: "\F5EF";
+      font-family: "bootstrap-icons", sans-serif;
+      color: #1d9bf0;
+      font-size: 1.2em;
+      margin-left: 1em;
+      text-decoration: none;
+    }
+  }
+  .message {
+    margin-left: 2.6em;
+    margin-top: 2em;
+    .shareIcons {
+      list-style-type: none;
+      justify-content: space-around;
+    }
+  }
+}

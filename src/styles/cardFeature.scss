@@ -1,0 +1,132 @@
+.cardFeature {
+  margin: 4em 0;
+
+  .g-5,
+  .gy-5 {
+    --bs-gutter-y: 7rem;
+  }
+
+  .card-col:nth-of-type(1) {
+    flex: 0 0 60%;
+  }
+  .card-col:nth-of-type(2) {
+    flex: 0 0 40%;
+  }
+
+  .card img.card-img-top {
+    width: 100%;
+  }
+
+  .card-body {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    background-color: #fff;
+  }
+
+  .card-title {
+    display: flex;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.375em;
+    align-items: center;
+
+    &:after {
+      content: "\F138";
+      font-family: "bootstrap-icons", sans-serif;
+      color: #ff227f;
+      font-size: 1.2em;
+      margin-left: 1em;
+      text-decoration: none;
+    }
+  }
+
+  .card {
+    border: none;
+    text-decoration: none;
+    &:hover .card-title {
+      color: #ff227f;
+      &:after {
+        color: #333;
+      }
+    }
+    &:hover .summary {
+      color: #333;
+    }
+  }
+  .card-col:nth-of-type(1) {
+    img {
+      height: 100%;
+    }
+    .card-body {
+      width: 50%;
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+    }
+  }
+  .card-col:nth-of-type(2) {
+    img {
+      height: 100%;
+    }
+    .card-body {
+      width: 75%;
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+    }
+  }
+
+  .summary p {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    display: block;
+  }
+
+  .cardFeature {
+    margin: 4em 0 2em 0;
+    .g-5 {
+      --bs-gutter-y: 1.5rem;
+      --bs-gutter-x: 0rem;
+    }
+  }
+
+  .col.card-col:nth-of-type(1) {
+    flex: 100%;
+    .card {
+      position: relative;
+
+      img {
+        height: 100%;
+      }
+      .card-body {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+  .card-col:nth-of-type(2) {
+    flex: 100%;
+    .card {
+      position: relative;
+      img {
+        height: 100%;
+      }
+      .card-body {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}

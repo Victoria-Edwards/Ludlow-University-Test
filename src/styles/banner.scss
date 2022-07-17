@@ -1,0 +1,134 @@
+.banner {
+  position: relative;
+  text-align: center;
+  hr {
+    opacity: 1;
+    height: 4px;
+    width: 5em;
+    background: linear-gradient(to left, #f24822, #34ceff);
+    margin: 0 auto 2em auto;
+  }
+  .bannerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    p {
+      font-family: "Oswald";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.5em;
+      line-height: 1.2;
+      text-align: center;
+      color: #fff;
+    }
+    .gradientButton a {
+      display: block;
+      background: none;
+      border: 10px solid;
+      border-image-slice: 1;
+      border-width: 2px;
+      border-image-source: linear-gradient(to left, #f24822, #34ceff);
+      font-family: "Oswald";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2em;
+      padding: 1em;
+      text-decoration: none;
+      text-align: center;
+      margin-top: 2em;
+      color: #fff;
+    }
+    .gradientButton {
+      max-width: 18.125em;
+      margin: 0 auto;
+      &:hover a {
+        text-decoration: underline;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .banner {
+    .bannerText {
+      p {
+        font-size: 1.5em;
+        line-height: 1.3;
+        letter-spacing: 1px;
+      }
+      .gradientButton a {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    img.img-fluid {
+      height: 30vh;
+      width: 100%;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+    .bannerText {
+      p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        letter-spacing: 1px;
+      }
+      .gradientButton a {
+        font-size: 1em;
+        padding: 0.75em;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    hr {
+      opacity: 1;
+      height: 3px;
+      margin: 0 auto 0.5em auto;
+    }
+    img.img-fluid {
+      height: 40vh;
+      object-fit: cover;
+    }
+    .bannerText {
+      p {
+        font-size: 1.25em;
+        line-height: 1.5;
+      }
+      .gradientButton a {
+        font-size: 1.2em;
+        margin-top: 0.8em;
+        padding: 0.3em;
+      }
+      .gradientButton {
+        max-width: 10em;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .banner {
+    hr {
+      margin: 0 auto 0.75em auto;
+    }
+    img.img-fluid {
+      height: 45vh;
+    }
+    .bannerText {
+      p {
+        font-size: 0.9em;
+        line-height: 1.25;
+      }
+    }
+  }
+}
