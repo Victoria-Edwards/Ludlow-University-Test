@@ -1,0 +1,87 @@
+.homeEvents {
+  margin: 4em auto;
+  .homeEventsHeading {
+    padding: 0.75em 0 0.5em 0;
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+  .gradientButton a {
+    display: block;
+    background: none;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #f24822, #34ceff);
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25em;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+
+    &:hover {
+      text-decoration: underline;
+      color: #333;
+    }
+  }
+
+  .gradientButton {
+    max-width: 18.125em;
+  }
+
+  .card {
+    position: relative;
+    text-decoration: none;
+    border: none;
+    &:hover .card-title {
+      text-decoration: underline;
+    }
+    &:hover .user .profile span:nth-of-type(2) {
+      color: #333;
+    }
+    img.card-img-top {
+      width: 100%;
+    }
+    .card-body {
+      position: absolute;
+      bottom: 0;
+      color: #fff;
+      width: 100%;
+      padding: 20px;
+      .card-title {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.5em;
+        line-height: 48px;
+      }
+    }
+    .user {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 180px;
+      width: 180px;
+      background-color: #fff;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .homeEvents {
+    .col {
+      flex: 1 1 auto;
+      width: 100%;
+      .card-title {
+        font-size: 1.8em !important;
+      }
+      .user {
+        height: 120px;
+        width: 120px;
+        background-color: #fff;
+      }
+    }
+  }
+}

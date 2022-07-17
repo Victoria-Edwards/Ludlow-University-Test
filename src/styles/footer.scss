@@ -1,0 +1,57 @@
+.site-footer {
+  .footerContent {
+    background-color: #fff;
+    padding: 35px 0 20px;
+    font-size: 1em;
+
+    .logoSide {
+      background-image: url("../img/logo-faded-footer.png");
+      height: 30vh;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+    }
+    @media (max-width: 767px) {
+      .logoSide {
+        height: 15vh;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    ul.logos1 {
+      list-style-type: none;
+    }
+    .social-icons {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+      text-align: left;
+    }
+
+    .social-icons a {
+      line-height: 44px;
+      width: 44px;
+      height: 44px;
+      margin-left: 0;
+      margin-right: 8px;
+      border: 1px solid #fff;
+      font-size: 22px;
+      color: #ff227f;
+      display: inline-block;
+    }
+    .social-icons a:active,
+    .social-icons a:focus,
+    .social-icons a:hover {
+      color: #333;
+    }
+
+    .copyright-text {
+      margin: 0;
+      font-size: 0.9em;
+      color: #333;
+    }
+  }
+}

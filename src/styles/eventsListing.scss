@@ -1,0 +1,27 @@
+.eventsListing {
+  margin: 4em 0;
+  .card {
+    text-decoration: none;
+    color: #333;
+    &:hover .card-title {
+      text-decoration: underline;
+    }
+  }
+  img {
+    height: 350px;
+    object-fit: cover;
+  }
+  .card-title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1.5;
+  }
+  .eventsDate {
+    font-size: 1.2em;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+  }
+}

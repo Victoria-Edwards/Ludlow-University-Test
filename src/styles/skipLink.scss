@@ -1,0 +1,32 @@
+/* Hidden skip to content button */
+#skip {
+  position: absolute;
+  left: 40%;
+  top: 0;
+  width: 20%;
+  margin-top: 10px;
+  margin-left: 0;
+  list-style: outside none;
+  text-align: center;
+  a {
+    position: absolute;
+    left: -99999px;
+    top: 30px;
+    &:focus,
+    &:active {
+      position: relative;
+      left: 0;
+      z-index: 9999;
+      width: 75%;
+      height: auto;
+      margin: 0 auto;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      font: 14px "Oswald", sans-serif !important;
+      color: #fff;
+      background: #333 repeat scroll 0 0;
+      border: 1px solid #fff;
+    }
+  }
+}

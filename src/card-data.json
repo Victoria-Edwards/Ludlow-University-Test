@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Activities and clubs",
+    "url": "/activities-and-clubs",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "image": "assets/paint-party-selfie.jpg",
+    "altText": "A group of people taking a selfie and covered in paint"
+  },
+  {
+    "id": 2,
+    "title": "Accommodation",
+    "url": "/accomodation",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "image": "assets/campus.jpg",
+    "altText": "Campus buildings"
+  },
+  {
+    "id": 3,
+    "title": "Chat to a student",
+    "url": "/chat-to-a-student",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "image": "assets/girl-mural.jpg",
+    "altText": "Girl standing in front of a mural"
+  },
+  {
+    "id": 4,
+    "title": "Support",
+    "url": "/support",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "image": "assets/laptop-with-stickers.jpg",
+    "altText": "Laptop with stickers on"
+  },
+  {
+    "id": 5,
+    "title": "Life in Ludlow",
+    "url": "/life-in-ludlow",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "image": "assets/downhill-biking.jpg",
+    "altText": "Downhill biking"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Ludlow campus rock festival 2019",
+    "image": "assets/girl-in-black-tshirt.jpg",
+    "altText": "Girl in a black tshirt",
+    "url": "/ludlow-campus-rock-festival",
+    "startDate": "2020-08-01T13:22:10.2566789+00:00",
+    "endDate": "2020-08-01T13:22:10.2566789+00:00"
+  },
+  {
+    "id": 2,
+    "title": "2019 game design exhibition",
+    "image": "assets/girl-in-vr-headset.jpg",
+    "altText": "Girl wearing a vr headset",
+    "url": "/2019-game-design-exhibition",
+    "startDate": "2020-08-14T13:22:10.2566789+00:00",
+    "endDate": "2020-08-14T13:22:10.2566789+00:00"
+  },
+  {
+    "id": 3,
+    "title": "Study collaboration session ",
+    "image": "assets/man-studying.jpg",
+    "altText": "Man wearing headphones and looking at laptop",
+    "url": "/study-collaboration-session",
+    "startDate": "2020-08-21T13:22:10.2566789+00:00",
+    "endDate": "2020-08-21T13:22:10.2566789+00:00"
+  }
+]
