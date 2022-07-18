@@ -4,13 +4,7 @@ import "./globalStyle.scss";
 import Header from "./components/Header";
 import Breadcrumb from "./components/Breadcrumb";
 import Footer from "./components/Footer";
-//Import Pages
-import Home from "./pages/Home";
-import Study from "./pages/Study";
-import Research from "./pages/Research";
-import About from "./pages/About";
-import StudentStories from "./pages/StudentStories";
-import Events from "./pages/Events";
+import routesData from "./components/Routes";
 
 //Router
 import { Routes, Route } from "react-router-dom";
@@ -25,12 +19,11 @@ function App() {
         <Header />
         <Breadcrumb />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/study" element={<Study />} />
-          <Route path="/research" element={<Research />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/studentStories" element={<StudentStories />} />
-          <Route path="/events" element={<Events />} />
+          {routesData.map((route, key) => {
+            return (
+              <Route path={route.path} element={route.element} key={key} />
+            );
+          })}
         </Routes>
         <Footer />
       </section>

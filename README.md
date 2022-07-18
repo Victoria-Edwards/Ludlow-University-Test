@@ -12,14 +12,15 @@ I chose not to use the Contensis React Base package as I use it almost daily in 
 
 - Sass
 - React Router
+- use-react-router-breadcrumb
 
 I used Sass for custom css, and React Router for routing pages as I've used this previously on small test projects whilst learning React.
+
+I used use-react-router-breadcrumb in order to add a small working breadcrumb.
 
 ## Simulating Content
 
 Instead of having all of my written content inline, I opted to simulate connecting to a service by creating JSON objects.
-
-Had I implemented a working breadcrumb menu I would have put the routed pages into a JSON file and mapped over the data rather than the static way I have implemented them in this project.
 
 ## Browser Testing
 
@@ -37,7 +38,7 @@ I checked the website with Axe Dev Tools as we recently were audited by the Home
 
 I use styled-components extensively in my current role and I would have preferred to use styled-components in this project, but I had issues with styled components causing errors and due to time constraints I chose to use .scss files instead.
 
-I would have liked to implement functional search and breadcrumb modules, again I had to forgo these due to time constraints.
+The breadcrumb is not completely working as it's not displaying the title of the Home link, this is also causing an issue in Axe Dev tools as it sees a link without text. Due to time constraints I have left this incomplete to work on later.
 
 ## If I rebuilt this a year from now
 
