@@ -2,9 +2,11 @@
 import "./globalStyle.scss";
 //import components
 import Header from "./components/Header";
-import Breadcrumb from "./components/Breadcrumb";
+
 import Footer from "./components/Footer";
-import routesData from "./components/Routes";
+
+import Breadcrumbs from "./components/Breadcrumb";
+import { routesData } from "./routes";
 
 //Router
 import { Routes, Route } from "react-router-dom";
@@ -17,11 +19,16 @@ function App() {
         aria-label="page wrapper"
       >
         <Header />
-        <Breadcrumb />
+        <Breadcrumbs crumbs={routesData} />
         <Routes>
-          {routesData.map((route, key) => {
+          {routesData.map((route, index) => {
             return (
-              <Route path={route.path} element={route.element} key={key} />
+              <Route
+                exact
+                path={route.path}
+                element={route.element}
+                key={index}
+              />
             );
           })}
         </Routes>
