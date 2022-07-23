@@ -38,8 +38,6 @@ I checked the website with Axe Dev Tools as we recently were audited by the Home
 
 I use styled-components extensively in my current role and I would have preferred to use styled-components in this project, but I had issues with styled components causing errors and due to time constraints I chose to use .scss files instead.
 
-The breadcrumb is not completely working as it's not displaying the title of the Home link, this is also causing an issue in Axe Dev tools as it sees a link without text. Due to time constraints I have left this incomplete to work on later.
-
 ## If I rebuilt this a year from now
 
 ### Imagery
